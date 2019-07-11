@@ -11,6 +11,13 @@
 
     void IncrementCount()
     {
-        currentCount++;
+        if (currentCount <= 1)
+        {
+            currentCount++;
+        }
+        else
+        {
+            currentCount += currentCount;
+        }
     }
 }
